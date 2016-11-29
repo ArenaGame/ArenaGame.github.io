@@ -1,0 +1,105 @@
+html {
+	height: 98%;
+}
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	background-color: #202020;
+	color: #484848;
+	height: 100%;
+	}
+div.fillContent{
+	background: #ededed;
+	width: 1380;
+	margin: 10 auto 10 auto;
+	min-height: 100%;
+	box-shadow: 0 0 20px rgba(0,0,0,1);
+	padding: 0 20 0 20;
+	vertical-align: middle;
+	}
+div.title {
+	width: 100%;
+	color: #484848;
+	padding: 10 0 0 0;
+	margin: 0 auto;
+	}
+div.centerLinks {
+	text-align: center;
+}
+div.manualContainter {
+	width: 500;
+	padding: 0;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+	padding: 0 0 0 0;
+	margin: 10 0 0 0;
+}
+img.center {display:block; margin:0 auto;}
+p.big {
+	padding: 20 0 0 0;
+	margin: 0 0 0 10;
+	text-align: left;
+	font-size: 18;
+	}
+p {
+	padding: 10 0 10 0;
+	margin: 0 0 0 10;
+	text-align: left;
+	font-size: 16;
+	text-indent: 20px;
+	}
+p.noindent {
+	text-indent: 0px;
+}
+p.centered {
+	text-align: center;
+}
+div.manulaLines {
+	margin: 10 0 10 30;
+	background: #d44b38;
+	padding: 0;
+	text-align: center;
+}
+a.insideManual {
+	display: block;
+	margin: 0;
+	padding: 10;
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	outline: none;
+}
+a.insideManual:hover { color: #fff; }
+a.insideManual:active { color: #fff; }
+div.space {
+	height: 50px;
+	}
+.backLink{
+	text-align: right;
+	padding: 0 0 0 0;
+}
+.backLink a{
+	font-size: small;
+	text-decoration: none
+}
+.backLink a:link, .backLink a:visited {
+			color: #484848;
+		}
+.backLink a:active, a:hover {
+			color: #484848;
+		}
+
+a.simpleButton {
+	color: #fff;
+	text-decoration: none;
+	user-select: none;
+	background: #d44b38;
+	padding: 10 60 10 60;
+	margin: 10;
+	outline: none;
+} 
+a.simpleButton:hover { background: #e85f4c; }
+a.simpleButton:active { background: #d1412d; }
+div.manulaLines:hover { background: #e85f4c; }
+div.manulaLines:active { background: #d1412d; }
