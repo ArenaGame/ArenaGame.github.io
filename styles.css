@@ -70,6 +70,13 @@ a.insideManual {
 	user-select: none;
 	outline: none;
 }
+a.general {
+	text-decoration: none;
+	color: #dc0000;
+}
+a.general:active, a.general:hover  {
+	color: #940000
+}
 a.insideManual:hover { color: #fff; }
 a.insideManual:active { color: #fff; }
 div.space {
