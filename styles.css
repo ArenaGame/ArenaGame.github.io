@@ -1,21 +1,40 @@
-html {
+/*html {
 	height: 98%;
+}*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+  height: 100%;
 }
 body {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
 	background-color: #202020;
 	color: #484848;
-	height: 100%;
+	/*height: 100%;*/
 	}
-div.fillContent{
+.fillContent{
 	background: #ededed;
-	width: 1380;
-	margin: 10 auto 10 auto;
-	min-height: 100%;
+	text-align: justify;
+	min-height: calc(100vh - 20px);
+	margin: 10px;
+	/*width: 1380;*/
+	/*margin: 10 auto 10 auto;*/
+	/*min-height: 100%;*/
 	box-shadow: 0 0 20px rgba(0,0,0,1);
-	padding: 0 20 0 20;
-	vertical-align: middle;
+	/*padding: 0 20 0 20;*/
+	/*vertical-align: middle;*/
 	}
+@media (min-width: 1446px) {
+  .fillContent {
+      margin: 10px auto;
+      width: 1426px;
+  }
+}
+.fillContent .content {
+  padding: 20px;
+}
 div.title {
 	width: 100%;
 	color: #484848;
@@ -26,7 +45,8 @@ div.centerLinks {
 	text-align: center;
 }
 div.manualContainter {
-	width: 500;
+	max-width: 500;
+	/*width: 500;*/
 	padding: 0;
 	margin: 0 auto;
 }
@@ -43,9 +63,10 @@ p.big {
 	font-size: 18;
 	}
 p {
-	padding: 10 0 10 0;
-	margin: 0 0 0 10;
-	text-align: left;
+	padding-top: 10;
+	/*padding: 10 0 10 0;
+	margin: 0 0 0 10;*/
+	/*text-align: left;*/
 	font-size: 16;
 	text-indent: 20px;
 	}
