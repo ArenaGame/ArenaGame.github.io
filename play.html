@@ -5,25 +5,45 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
-	<SCRIPT language="Javascript">
-<!--
-var message="";
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2) {
-(message);
-return false;}}}
-if (document.layers) {
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS;
-}else{
-document.onmouseup=clickNS;
-document.oncontextmenu=clickIE;
-}
-document.oncontextmenu=new Function("return false")
--->
-</SCRIPT>
+
+	<script language="Javascript">
+	<!--
+	var message="";
+	function clickIE()
+	{
+		if (document.all)
+		{
+			(message);
+			return false;
+		}
+	}
+
+	function clickNS(e) 
+	{
+		if (document.layers||(document.getElementById&&!document.all)) 
+		{
+			if (e.which==2) 
+			{
+				(message);
+				return false;
+			}
+		}
+	}
+	if (document.layers) 
+	{
+		document.captureEvents(Event.MOUSEDOWN);
+		document.onmousedown=clickNS;
+	}
+	else
+	{
+		document.onmouseup=clickNS;
+		document.oncontextmenu=clickIE;
+	}
+
+	document.oncontextmenu=new Function("return false")
+	-->
+	</script>
+
 		<script type="text/javascript">
 		<!--
 		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -32,6 +52,7 @@ document.oncontextmenu=new Function("return false")
 		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
 		-->
 		</script>
+		
 		<script type="text/javascript">
 		<!--
 			var config = {
@@ -43,17 +64,20 @@ document.oncontextmenu=new Function("return false")
 			config.params["disableContextMenu"] = true;
 			var u = new UnityObject2(config);
 			
-			jQuery(function() {
-
+			jQuery(function() 
+			{
 				var $missingScreen = jQuery("#unityPlayer").find(".missing");
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
 				$brokenScreen.hide();
 
-				u.observeProgress(function (progress) {
-					switch(progress.pluginStatus) {
+				u.observeProgress(function (progress) 
+				{
+					switch(progress.pluginStatus) 
+					{
 						case "broken":
-							$brokenScreen.find("a").click(function (e) {
+							$brokenScreen.find("a").click(function (e) 
+							{
 								e.stopPropagation();
 								e.preventDefault();
 								u.installPlugin();
@@ -62,7 +86,8 @@ document.oncontextmenu=new Function("return false")
 							$brokenScreen.show();
 						break;
 						case "missing":
-							$missingScreen.find("a").click(function (e) {
+							$missingScreen.find("a").click(function (e) 
+							{
 								e.stopPropagation();
 								e.preventDefault();
 								u.installPlugin();
@@ -81,6 +106,7 @@ document.oncontextmenu=new Function("return false")
 			});
 		-->
 		</script>
+		
 		<style type="text/css">
 		<!--
 		div#unityPlayer {
@@ -102,9 +128,11 @@ document.oncontextmenu=new Function("return false")
 		<p></p>
 			<div id="unityPlayer">
 				<div class="missing">
-					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-					</a>
+				<p>Если вы видите это сообщение, значит ваш браузер не умеет показывать Unity Web Player. Причин может быть несколько.</p>
+				<ol class="missing">
+					<li class="missing"> Просто не установлено расширение для браузера. Тогда идём на <a href="http://unity3d.com/webplayer/" class="general">сайт</a> и скачиваем всё, что нужно.
+					<li class="missing"> Разработчик браузера намеренно отключил возможность показа Unity Web Player-а. Решение для Firefox состоит в использовании 32-bit версии, которая называется Firefox ESR. Она в точности как обычный Firefox, но вот только разрешает использовать NPAPI-плагины. Качать <a href="https://www.mozilla.org/en-US/firefox/organizations/all/" class="general">тут</a>.
+				</ol>
 				</div>
 			</div>
 	</div>

@@ -12,19 +12,13 @@ body {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
 	background-color: #202020;
 	color: #484848;
-	/*height: 100%;*/
 	}
 .fillContent{
 	background: #ededed;
 	text-align: justify;
 	min-height: calc(100vh - 20px);
 	margin: 10px;
-	/*width: 1380;*/
-	/*margin: 10 auto 10 auto;*/
-	/*min-height: 100%;*/
 	box-shadow: 0 0 20px rgba(0,0,0,1);
-	/*padding: 0 20 0 20;*/
-	/*vertical-align: middle;*/
 	}
 @media (min-width: 1446px) {
   .fillContent {
@@ -46,7 +40,6 @@ div.centerLinks {
 }
 div.manualContainter {
 	max-width: 500;
-	/*width: 500;*/
 	padding: 0;
 	margin: 0 auto;
 }
@@ -70,9 +63,6 @@ p.big {
 	}
 p {
 	padding-top: 10;
-	/*padding: 10 0 10 0;
-	margin: 0 0 0 10;*/
-	/*text-align: left;*/
 	font-size: 16;
 	text-indent: 20px;
 	}
@@ -137,3 +127,17 @@ a.simpleButton:hover { background: #e85f4c; }
 a.simpleButton:active { background: #d1412d; }
 div.manulaLines:hover { background: #e85f4c; }
 div.manulaLines:active { background: #d1412d; }
+
+ol.missing
+{
+	margin: 10 40;
+}
+li.missing
+{
+	padding: 5;
+}
+
+div.missing
+{
+	margin:auto;
+}
