@@ -61,6 +61,14 @@ p.big {
 	font-size: 18;
 	text-align: justify;
 	}
+p.bigCentered {
+	padding: 0 0 15 0;
+	margin: 0 0 0 0;
+	text-align: left;
+	font-size: 18;
+	text-align: justify;
+	text-align: center;
+	}
 p {
 	padding-top: 10;
 	font-size: 16;
@@ -97,7 +105,7 @@ a.general:active, a.general:hover  {
 a.insideManual:hover { color: #fff; }
 a.insideManual:active { color: #fff; }
 div.space {
-	height: 50px;
+	height: 20px;
 	}
 .backLink{
 	text-align: right;
@@ -140,4 +148,12 @@ li.missing
 div.missing
 {
 	margin:auto;
+}
+
+iframe.statusIFrame
+{
+	border-style: none;
+	margin: 0 0 23 0;
+	height: 26;
+	width: 120;
 }
